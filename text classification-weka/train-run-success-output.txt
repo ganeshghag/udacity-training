@@ -1,0 +1,150 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.FilteredClassifier -F "weka.filters.unsupervised.attribute.StringToWordVector -R first-last -W 1000 -prune-rate -1.0 -C -T -I -N 0 -stemmer weka.core.stemmers.IteratedLovinsStemmer -stopwords-handler weka.core.stopwords.MultiStopwords -M 1 -tokenizer \"weka.core.tokenizers.WordTokenizer -delimiters \\\" \\\\r\\\\n\\\\t.,;:\\\\\\\'\\\\\\\"()?!\\\"\"" -S 1 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+Relation:     text-classi1-training-weka.filters.unsupervised.attribute.ClassAssigner-Clast
+Instances:    24
+Attributes:   2
+              mytext
+              class-category
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+FilteredClassifier using weka.classifiers.trees.J48 -C 0.25 -M 2 on data filtered through weka.filters.unsupervised.attribute.StringToWordVector -R 1 -W 1000 -prune-rate -1.0 -C -T -I -N 0 -stemmer weka.core.stemmers.IteratedLovinsStemmer -stopwords-handler weka.core.stopwords.MultiStopwords -M 1 -tokenizer "weka.core.tokenizers.WordTokenizer -delimiters \" \\r\\n\\t.,;:\\\'\\\"()?!\""
+
+Filtered Header
+@relation 'text-classi1-training-weka.filters.unsupervised.attribute.ClassAssigner-Clast-weka.filters.unsupervised.attribute.StringToWordVector-R1-W1000-prune-rate-1.0-C-T-I-N0-stemmerweka.core.stemmers.IteratedLovinsStemmer-stopwords-handlerweka.core.stopwords.MultiStopwords-M1-tokenizerweka.core.tokenizers.WordTokenizer -delimiters \" \\r\\n\\t.,;:\\\'\\\"()?!\"'
+
+@attribute class-category {0,1,2}
+@attribute 2 numeric
+@attribute a numeric
+@attribute about numeric
+@attribute and numeric
+@attribute ar numeric
+@attribute be numeric
+@attribute best numeric
+@attribute can numeric
+@attribute car numeric
+@attribute do numeric
+@attribute evil numeric
+@attribute find numeric
+@attribute fr numeric
+@attribute girl numeric
+@attribute hav numeric
+@attribute i numeric
+@attribute import numeric
+@attribute is numeric
+@attribute kind numeric
+@attribute lik numeric
+@attribute llik numeric
+@attribute look numeric
+@attribute man numeric
+@attribute manufacturer numeric
+@attribute nec numeric
+@attribute nic numeric
+@attribute no numeric
+@attribute not numeric
+@attribute of numeric
+@attribute out numeric
+@attribute sam numeric
+@attribute ship numeric
+@attribute th numeric
+@attribute to numeric
+@attribute trifl numeric
+@attribute what numeric
+@attribute which numeric
+@attribute with numeric
+@attribute you numeric
+@attribute at numeric
+@attribute brought numeric
+@attribute cheap numeric
+@attribute differ numeric
+@attribute displ numeric
+@attribute down numeric
+@attribute for numeric
+@attribute it numeric
+@attribute lif numeric
+@attribute lin numeric
+@attribute maintain numeric
+@attribute modern numeric
+@attribute plan numeric
+@attribute shap numeric
+@attribute siz numeric
+@attribute ther numeric
+@attribute train numeric
+@attribute travel numeric
+@attribute typ numeric
+@attribute war numeric
+@attribute wh numeric
+@attribute world numeric
+@attribute being numeric
+@attribute build numeric
+@attribute built numeric
+@attribute burn numeric
+@attribute cannot numeric
+@attribute day numeric
+@attribute entr numeric
+@attribute exp numeric
+@attribute ge numeric
+@attribute guy numeric
+@attribute in numeric
+@attribute int numeric
+@attribute mad numeric
+@attribute new numeric
+@attribute now numeric
+@attribute re numeric
+@attribute rock numeric
+@attribute spec numeric
+@attribute up numeric
+@attribute ver numeric
+@attribute without numeric
+
+@data
+
+
+Classifier Model
+J48 pruned tree
+------------------
+
+car <= 0
+|   plan <= 0: 2 (7.0)
+|   plan > 0: 1 (7.0)
+car > 0: 0 (10.0)
+
+Number of Leaves  : 	3
+
+Size of the tree : 	5
+
+
+Time taken to build model: 0.1 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          24              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Total Number of Instances               24     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     0
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     1
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     2
+Weighted Avg.    1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     
+
+=== Confusion Matrix ===
+
+  a  b  c   <-- classified as
+ 10  0  0 |  a = 0
+  0  7  0 |  b = 1
+  0  0  7 |  c = 2
+

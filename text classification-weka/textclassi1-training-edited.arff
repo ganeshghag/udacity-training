@@ -1,0 +1,30 @@
+@relation text-classi1-training-weka.filters.unsupervised.attribute.ClassAssigner-Clast
+
+@attribute mytext string
+@attribute class-category {0,1,2}
+
+@data
+'this is about cars',0
+'i like cars',0
+'cars are a girls best friend',0
+'what kind of cars do you llike',0
+'cars have many manufacturers',0
+'do you like rockets',2
+'rockets are very expensive',2
+'new manufactureres are getting into building rockets',2
+'rockets cannot be built in a day',2
+'no 2 cars can be the same',0
+'there are many types of planes',1
+'planes are the life line of modern travel',1
+'planes are of different shapes and sizes',1
+'planes can be brought down',1
+'cars are a necessary evil',0
+'which cars are imported? can you find out',0
+'cars are not to be trifled with',0
+'cars and ships look nice',0
+'planes are not cheap to maintain',1
+'planes and trains are where its at',1
+'there are many world war 2 planes for display',1
+'rockets cannot do re entry without burning up',2
+'special type of rockets are being made now',2
+'rockets are a guys best friend',2

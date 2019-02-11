@@ -1,0 +1,12 @@
+@relation text-classi1-training
+
+@attribute mytext string
+@attribute class-category {0,1,2}
+
+@data
+'cars are not necessary',0
+'rockets are cool',2
+'some planes can be run',1
+'some run can be planed',1
+'rocket is what i am looking for',2
+'car locks can be changed here',0
